@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>UiPath.ChatbotSamples.BotFramework.Dialogs</AssemblyName>
+    <RootNamespace>UiPath.ChatbotSamples.BotFramework.Dialogs</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Bot.Builder.AI.Luis" Version="4.4.4" />
+    <PackageReference Include="Microsoft.Bot.Builder.Dialogs" Version="4.4.4" />
+    <PackageReference Include="Microsoft.Bot.Configuration" Version="4.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Actions\Actions.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+
+</Project>

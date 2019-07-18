@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>UiPath.ChatbotSamples.BotFramework.Utils</AssemblyName>
+    <RootNamespace>UiPath.ChatbotSamples.BotFramework.Utils</RootNamespace>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Internal_Exception" xml:space="preserve">
+    <value>Sorry, something went wrong. Please retry later.</value>
+  </data>
+  <data name="Cannot_Understand" xml:space="preserve">
+    <value>Sorry, I didn't understand what you just said to me.</value>
+  </data>
+  <data name="Greeting" xml:space="preserve">
+    <value>Hi, how can I help you today?</value>
+  </data>
+  <data name="Bye" xml:space="preserve">
+    <value>Bye! Have a good day!</value>
+  </data>
+  <data name="Bye_With_Active_Dialog" xml:space="preserve">
+    <value>Sorry, I was not helpful.</value>
+  </data>
+  <data name="Cancel_Success" xml:space="preserve">
+    <value>I have cancelled our last activity.</value>
+  </data>
+  <data name="Cancel_Fail" xml:space="preserve">
+    <value>Sorry, I don't have anything to cancel.</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>You can ask me about delayed shipments, broken items, etc.</value>
+  </data>
+  <data name="Talk_To_Agent" xml:space="preserve">
+    <value>To talk to a human agent, please call (123)456-7890.</value>
+  </data>
+  <data name="Anything_Else" xml:space="preserve">
+    <value>Is there anything else I can help you with?</value>
+  </data>
+  <data name="Ask_Customer_Id" xml:space="preserve">
+    <value>I can help to search for your order. Can you provide your customer Id?</value>
+  </data>
+  <data name="Working_On" xml:space="preserve">
+    <value>Working on it...</value>
+  </data>
+  <data name="No_Undelivered_Order" xml:space="preserve">
+    <value>I don't see any other undelivered orders. Would you like to talk to an agent?</value>
+  </data>
+  <data name="Which_Undelivered" xml:space="preserve">
+    <value>I searched for your orders in the past 1 month. Below are the orders that have not been delivered yet. Which one are you asking about?</value>
+  </data>
+  <data name="Which_Delivered" xml:space="preserve">
+    <value>I searched for your orders in the past 1 month. Below are the orders that have been delivered to you. Which one are you asking about?</value>
+  </data>
+  <data name="None_Of_Above" xml:space="preserve">
+    <value>None of above</value>
+  </data>
+  <data name="Deliver_Status" xml:space="preserve">
+    <value>Your order is not delivered because it is {0}. Do you want me to cancel this one and order from another supplier for you with no extra shipping fee? </value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes </value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Thank_You" xml:space="preserve">
+    <value>Thank you!</value>
+  </data>
+  <data name="Order_Created" xml:space="preserve">
+    <value>Your new order has been placed with order number {0}. It is expected to deliver on {1}. Details have been sent to your email.</value>
+  </data>
+  <data name="Order_Cancelled" xml:space="preserve">
+    <value>Your order with order number {0} has been cancelled. You can print your return label at {1}. Details have been sent to your email.</value>
+  </data>
+  <data name="Describe_Damage" xml:space="preserve">
+    <value>Can you describe the damage?</value>
+  </data>
+  <data name="Return_Or_Replace" xml:space="preserve">
+    <value>I've made a note of the damage. Do you want me to return or replace this item?</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="Replace" xml:space="preserve">
+    <value>Replace</value>
+  </data>
+</root>

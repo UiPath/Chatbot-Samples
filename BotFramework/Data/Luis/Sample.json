@@ -1,0 +1,445 @@
+{
+  "intents": [
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Help"
+    },
+    {
+      "name": "Cancel"
+    },
+    {
+      "name": "Bye"
+    },
+    {
+      "name": "DelayedShipment"
+    },
+    {
+      "name": "ReplaceItem"
+    },
+    {
+      "name": "CustomerId"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Id",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "regex_entities": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "good evening",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey there",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hiya",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you today",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "what's your name",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "who am i speaking to",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "who am i speaking with",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "who are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "yo",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "I need help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "please help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can you do",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "?",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "I'm lost",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "lost",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "confused",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "frustrated",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what are your capabilities",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "how do I interact with you",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "help please",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i'm stuck",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "i don't understand",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can I say",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can you help me with",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what can you do",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "what do i do now",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "why doesn't this work",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "can you help me",
+      "intent": "Help",
+      "entities": []
+    },
+    {
+      "text": "cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "stop what you are doing",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "please cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "I don't want to continue",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "quit",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "stop",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "abort",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "don't do it",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "don't do that",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "i would like to cancel",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "i will not give you my name",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "i won't give you my name",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no way, I won't give you my location",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "I'm not going to tell you where i live",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "I will not give you my location or name",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "no way",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "please stop",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "I'm bailing",
+      "intent": "Cancel",
+      "entities": []
+    },
+    {
+      "text": "Bye",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "Talk to agent",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "I want to talk to human",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "no, thank you",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "that's all I need for today",
+      "intent": "Bye",
+      "entities": []
+    },
+    {
+      "text": "My order is delayed",
+      "intent": "DelayedShipment",
+      "entities": []
+    },
+    {
+      "text": "shipment is delayed",
+      "intent": "DelayedShipment",
+      "entities": []
+    },
+    {
+      "text": "why my order is not shipped",
+      "intent": "DelayedShipment",
+      "entities": []
+    },
+    {
+      "text": "The headphones shipped to me are broken",
+      "intent": "ReplaceItem",
+      "entities": []
+    },
+    {
+      "text": "The item is broken",
+      "intent": "ReplaceItem",
+      "entities": []
+    },
+    {
+      "text": "The item is not working",
+      "intent": "ReplaceItem",
+      "entities": []
+    },
+    {
+      "text": "The wireless speakers are not working",
+      "intent": "ReplaceItem",
+      "entities": []
+    },
+    {
+      "text": "I want to replace my item",
+      "intent": "ReplaceItem",
+      "entities": []
+    },
+    {
+      "text": "I want to replace",
+      "intent": "ReplaceItem",
+      "entities": []
+    },
+    {
+      "text": "I want to return my item",
+      "intent": "ReplaceItem",
+      "entities": []
+    },
+    {
+      "text": "I want to return the headphones",
+      "intent": "ReplaceItem",
+      "entities": []
+    },
+    {
+      "text": "My customer Id is 12345",
+      "intent": "CustomerId",
+      "entities": [
+        {
+          "entity": "Id",
+          "startPos": 18,
+          "endPos": 22
+        }
+      ]
+    },
+    {
+      "text": "It is 234",
+      "intent": "CustomerId",
+      "entities": [
+        {
+          "entity": "Id",
+          "startPos": 6,
+          "endPos": 8
+        }
+      ]
+    },
+    {
+      "text": "My Id is 4678",
+      "intent": "CustomerId",
+      "entities": [
+        {
+          "entity": "Id",
+          "startPos": 9,
+          "endPos": 12
+        }
+      ]
+    },
+    {
+      "text": "Account id 890",
+      "intent": "CustomerId",
+      "entities": [
+        {
+          "entity": "Id",
+          "startPos": 11,
+          "endPos": 13
+        }
+      ]
+    }
+  ],
+  "patterns": [],
+  "patternAnyEntities": [],
+  "prebuiltEntities": [],
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "SampleBot",
+  "desc": "",
+  "culture": "en-us"
+}

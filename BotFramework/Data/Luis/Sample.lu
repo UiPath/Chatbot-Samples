@@ -1,0 +1,88 @@
+# Greeting
+- good evening
+- good morning
+- hello
+- hello bot
+- hey
+- hey there
+- hi
+- hi bot
+- hiya
+- how are you
+- how are you today
+- what's your name
+- who am i speaking to
+- who am i speaking with
+- who are you
+- yo
+
+# Help
+- I need help
+- please help
+- what can you do
+- ?
+- I'm lost
+- lost
+- confused
+- frustrated
+- what are your capabilities
+- help me
+- help
+- how do I interact with you
+- help please
+- i'm stuck
+- i don't understand
+- what can I say
+- what can you help me with
+- what can you do
+- what do i do now
+- why doesn't this work
+- can you help me
+
+# Cancel
+- cancel
+- stop what you are doing
+- please cancel
+- I don't want to continue
+- quit
+- stop
+- abort
+- don't do it
+- don't do that
+- i would like to cancel
+- i will not give you my name
+- i won't give you my name
+- no way, I won't give you my location
+- I'm not going to tell you where i live
+- I will not give you my location or name
+- no way
+- please stop
+- I'm bailing
+
+# Bye
+- Bye
+- Talk to agent
+- I want to talk to human
+- no, thank you
+- that's all I need for today
+
+# DelayedShipment
+- My order is delayed
+- shipment is delayed
+- why my order is not shipped
+
+# ReplaceItem
+- The headphones shipped to me are broken
+- The item is broken
+- The item is not working
+- The wireless speakers are not working
+- I want to replace my item
+- I want to replace
+- I want to return my item
+- I want to return the headphones
+
+# CustomerId
+- My customer Id is {Id=12345}
+- It is {Id=234}
+- My Id is {Id=4678}
+- Account id {Id=890}

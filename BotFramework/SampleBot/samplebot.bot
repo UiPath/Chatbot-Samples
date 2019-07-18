@@ -1,0 +1,25 @@
+{
+  "name": "sample",
+  "description": "",
+  "services": [
+    {
+      "type": "endpoint",
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3979/api/messages",
+      "id": "23a5a680-87c0-11e9-9c8b-ad4f3822eef1",
+      "name": "http://localhost:3979/api/messages"
+    },
+    {
+      "type": "luis",
+      "name": "Sample",
+      "appId": "44dddc72-a17d-43e6-b972-2fff9098afd8",
+      "authoringKey": "231bce45531f463bb77c8217e8534661",
+      "version": "0.1",
+      "region": "westus"
+    }
+  ],
+  "padlock": "",
+  "version": "2.0",
+  "overrides": null
+}
