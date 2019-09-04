@@ -1,6 +1,6 @@
 ﻿using Microsoft.Bot.Builder.Dialogs;
 
-namespace UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog.Base
+namespace UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog.Base
 {
     public class DialogBase: ComponentDialog
     {

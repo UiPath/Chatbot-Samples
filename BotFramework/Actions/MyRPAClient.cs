@@ -11,12 +11,12 @@ using UiPath.ChatbotSamples.BotFramework.Utils;
 
 namespace UiPath.ChatbotSamples.BotFramework.Actions
 {
-    public class SapRpaClient: ISapRpaClient
+    public class MyRpaClient: IMyRpaClient
     {
         private readonly IOrchestratorClient _orchestratorClient;
         private readonly OrchestratorSettings _orchestratorSettings;
 
-        public SapRpaClient(IOrchestratorClient orchestratorClient, IOptionsMonitor<OrchestratorSettings> orchestratorSettingsAccessor)
+        public MyRpaClient(IOrchestratorClient orchestratorClient, IOptionsMonitor<OrchestratorSettings> orchestratorSettingsAccessor)
         {
             _orchestratorClient = orchestratorClient.CheckNullReference();
             _orchestratorSettings = orchestratorSettingsAccessor.CheckNullReference().CurrentValue;

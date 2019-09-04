@@ -10,8 +10,8 @@ namespace UiPath.ChatbotSamples.BotFramework.DialogsTest
         [Fact]
         public void ShouldHaveAtLeastOneDialog()
         {
-            string name_space = "UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog";
-            var q = from t in Assembly.GetAssembly(typeof(SapBot)).GetTypes()
+            string name_space = "UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog";
+            var q = from t in Assembly.GetAssembly(typeof(MyBot)).GetTypes()
                     where t.IsClass && t.Namespace == name_space && !t.IsNested
                     select t;
             var result = q.ToList();

@@ -6,7 +6,7 @@ namespace UiPath.ChatbotSamples.BotFramework.DialogsTest
 {
     public class IntentTest
     {
-        private readonly SapIntents intents = new SapIntents();
+        private readonly MyIntents intents = new MyIntents();
 
         [Fact]
         public void DefaultIntentShouldBeDefined()

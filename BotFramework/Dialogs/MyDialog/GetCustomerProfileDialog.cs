@@ -3,10 +3,10 @@ using Microsoft.Bot.Builder.Dialogs;
 using System.Threading;
 using System.Threading.Tasks;
 using UiPath.ChatbotSamples.BotFramework.Common.Models;
-using UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog.Base;
+using UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog.Base;
 using UiPath.ChatbotSamples.BotFramework.Resources;
 
-namespace UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog
+namespace UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog
 {
     public class GetCustomerProfileDialog: StatefulDialogBase
     {

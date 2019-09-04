@@ -3,7 +3,7 @@ using Microsoft.Bot.Builder.Dialogs;
 using System.Threading.Tasks;
 using UiPath.ChatbotSamples.BotFramework.Common.Models;
 
-namespace UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog.Base
+namespace UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog.Base
 {
     public class StatefulDialogBase: DialogBase
     {

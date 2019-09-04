@@ -5,7 +5,7 @@ using UiPath.ChatbotSamples.BotFramework.Utils;
 
 namespace UiPath.ChatbotSamples.BotFramework.Actions
 {
-    public class SapRpaClientMock : ISapRpaClient
+    public class MyRpaClientMock : IMyRpaClient
     {
         public async Task<GetItemsOutput> GetItemsAsync(GetItemsInput input)
         {

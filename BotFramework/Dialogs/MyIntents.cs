@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UiPath.ChatbotSamples.BotFramework.Common;
 using UiPath.ChatbotSamples.BotFramework.Common.Models;
-using UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog;
+using UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog;
 using UiPath.ChatbotSamples.BotFramework.Resources;
 
 namespace UiPath.ChatbotSamples.BotFramework.Dialogs
 {
-    public sealed class SapIntents: IBotIntents
+    public sealed class MyIntents: IBotIntents
     {
-        public SapIntents()
+        public MyIntents()
         {
             var noneIntent = new Intent("None", null, IntentType.None);
             Intents = IntentsToDictionary(new Intent[] {
