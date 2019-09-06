@@ -31,17 +31,17 @@ This project implements a common multi-turn bot. This bot is focusing on the con
         5) If no active dialog, then start the dialog mappted to this intent
 
 # Dialog project
-This project defines the customized settings for the sample scenario (SAP bot that handles replace item and cancel order). It includes
-- Intents. SapIntents defines the intent for the bot and the mapping dialog flow
-- SapDialogs. Dialogs in this folder defines the conversation flow for each dialog. To get entities from EntityState, inherit from StatefulDialogBase, otherwise DialogBase.
-- SapBotSettings. This file defines the LUIS configuration it wants to use and the postprocessing for LUIS entities
-- SapBot. This file adds all the dialogs to the dialog set.
+This project defines the customized settings for the sample scenario (My bot that handles replace item and cancel order). It includes
+- Intents. MyIntents defines the intent for the bot and the mapping dialog flow
+- MyDialogs. Dialogs in this folder defines the conversation flow for each dialog. To get entities from EntityState, inherit from StatefulDialogBase, otherwise DialogBase.
+- MyBotSettings. This file defines the LUIS configuration it wants to use and the postprocessing for LUIS entities
+- MyBot. This file adds all the dialogs to the dialog set.
 
 # Actions project
 This project is called by Dialog project to execute bot actions. In this sample code, all the actions talk to orchestrator to run a certain process. This project includes:
 - Models as interface between Dialog and Actions
 - Models as interface between Actions and Orchestrator. Note that the models may not necessarily the same as the models above. GetItemsOutputInternal.cs provides an example of this. It needs to be mapped to the external model for dialog consumption.
-- SapRpaClient that is to prepare the input parameter and call the Orchestrator client to run a certain process
+- MyRpaClient that is to prepare the input parameter and call the Orchestrator client to run a certain process
 
 # OrchestratorClient project
 This project is to run a job in orchestrator and return the result. The public method it provides is ExecuteJobAsync, which first start job, then wait for job to complete, then get job detail and return.
