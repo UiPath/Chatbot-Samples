@@ -4,7 +4,7 @@ using UiPath.ChatbotSamples.BotFramework.Common.Models;
 
 namespace UiPath.ChatbotSamples.BotFramework.Dialogs
 {
-    public sealed class SapBotSettings: BotSettings
+    public sealed class MyBotSettings: BotSettings
     {
         /// <summary>
         /// Key in the bot config (.bot file) for the LUIS instance.

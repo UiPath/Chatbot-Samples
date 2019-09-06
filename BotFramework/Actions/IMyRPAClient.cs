@@ -3,7 +3,7 @@ using UiPath.ChatbotSamples.BotFramework.Actions.Models;
 
 namespace UiPath.ChatbotSamples.BotFramework.Actions
 {
-    public interface ISapRpaClient
+    public interface IMyRpaClient
     {
         Task<GetItemsOutput> GetItemsAsync(GetItemsInput input);
 

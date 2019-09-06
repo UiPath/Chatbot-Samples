@@ -11,7 +11,7 @@ using Xunit;
 
 namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
 {
-    public class SapRpaClientTest
+    public class MyRpaClientTest
     {
         private readonly OrchestratorSettingOption _invalidSetting = new OrchestratorSettingOption(
             new OrchestratorSettings()
@@ -49,7 +49,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
         {
             var orchestratorClient = new Mock<IOrchestratorClient>();
 
-            var client = new SapRpaClient(orchestratorClient.Object, _invalidSetting);
+            var client = new MyRpaClient(orchestratorClient.Object, _invalidSetting);
             Assert.Throws<InvalidOperationException>(() => client.CreatePurchaseOrderAsync(new CreatePurchaseOrderInput()).GetAwaiter().GetResult());
         }
 
@@ -59,7 +59,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
             CreatePurchaseOrderOutput mockOutput = null;
             var mockResponse = CreateJobResponse(mockOutput);
 
-            var client = new SapRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
+            var client = new MyRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
             Assert.Throws<ArgumentNullException>(() => client.CreatePurchaseOrderAsync(new CreatePurchaseOrderInput()).GetAwaiter().GetResult());
         }
 
@@ -73,7 +73,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
 
             var mockResponse = CreateJobResponse(mockOutput);
 
-            var client = new SapRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
+            var client = new MyRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
             var output = client.CreatePurchaseOrderAsync(new CreatePurchaseOrderInput()).GetAwaiter().GetResult();
             Assert.Equal(mockOutput.PurchaseOrderId, output.PurchaseOrderId);
         }
@@ -84,7 +84,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
             CreateSalesOrderOutput mockOutput = null;
             var mockResponse = CreateJobResponse(mockOutput);
 
-            var client = new SapRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
+            var client = new MyRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
             Assert.Throws<ArgumentNullException>(() => client.CreateSalesOrderAsync(new CreateSalesOrderInput()).GetAwaiter().GetResult());
         }
 
@@ -99,7 +99,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
 
             var mockResponse = CreateJobResponse(mockOutput);
 
-            var client = new SapRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
+            var client = new MyRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
             var output = client.CreateSalesOrderAsync(new CreateSalesOrderInput()).GetAwaiter().GetResult();
             Assert.Equal(mockOutput.OrderId, output.OrderId);
             Assert.Equal(mockOutput.DeliveryDate.ToShortDateString(), output.DeliveryDate.ToShortDateString());
@@ -111,7 +111,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
             GetItemsOutput mockOutput = null;
             var mockResponse = CreateJobResponse(mockOutput);
 
-            var client = new SapRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
+            var client = new MyRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
             Assert.Throws<ArgumentNullException>(() => client.GetItemsAsync(new GetItemsInput()).GetAwaiter().GetResult());
         }
 
@@ -134,7 +134,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
 
             var mockResponse = CreateJobResponse(mockOutput);
 
-            var client = new SapRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
+            var client = new MyRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
             var output = client.GetItemsAsync(new GetItemsInput()).GetAwaiter().GetResult();
             Assert.Equal(mockOutput.ItemId.Length, output.Items.Length);
             Assert.Equal(mockOutput.ItemId[0], output.Items[0].ItemId);
@@ -146,7 +146,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
             CancelOrderOutput mockOutput = null;
             var mockResponse = CreateJobResponse(mockOutput);
 
-            var client = new SapRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
+            var client = new MyRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
             Assert.Throws<ArgumentNullException>(() => client.CancelOrderAsync(new CancelOrderInput()).GetAwaiter().GetResult());
         }
 
@@ -160,7 +160,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Actions.Test
 
             var mockResponse = CreateJobResponse(mockOutput);
 
-            var client = new SapRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
+            var client = new MyRpaClient(GetMockOrchestratorClient(mockResponse), _validSetting);
             var output = client.CancelOrderAsync(new CancelOrderInput()).GetAwaiter().GetResult();
             Assert.Equal(mockOutput.ReturnLabelLocation, output.ReturnLabelLocation);
         }

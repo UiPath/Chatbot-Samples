@@ -75,10 +75,10 @@ namespace UiPath.ChatbotSamples.BotFramework.Bot
             services.Configure<OrchestratorSettings>(Configuration.GetSection("OrchestratorSettings"));
             services.AddSingleton<ITokenService, TokenService>();
             services.AddSingleton<IOrchestratorClient, OrchestratorClient.OrchestratorClient>();
-            services.AddSingleton<ISapRpaClient, SapRpaClient>();
+            services.AddSingleton<IMyRpaClient, MyRpaClient>();
 
             // Inject bot.
-            services.AddBot<SapBot>();
+            services.AddBot<MyBot>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -2,14 +2,14 @@
 using Microsoft.Extensions.Logging;
 using UiPath.ChatbotSamples.BotFramework.Actions;
 using UiPath.ChatbotSamples.BotFramework.Common;
-using UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog;
+using UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog;
 
 namespace UiPath.ChatbotSamples.BotFramework.Dialogs
 {
-    public class SapBot : MultiTurnBot
+    public class MyBot : MultiTurnBot
     {
-        public SapBot(BotServices services, UserState userState, ConversationState conversationState, ISapRpaClient rpaClient, ILoggerFactory loggerFactory)
-            :base(services, userState, conversationState, new SapBotSettings(), new SapIntents(), loggerFactory)
+        public MyBot(BotServices services, UserState userState, ConversationState conversationState, IMyRpaClient rpaClient, ILoggerFactory loggerFactory)
+            :base(services, userState, conversationState, new MyBotSettings(), new MyIntents(), loggerFactory)
         {
             // Must make sure all the dialogs add to dialog set here.
             _dialogSet.AddDialogToSet(new GreetingDialog());

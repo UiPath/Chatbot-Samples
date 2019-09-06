@@ -7,18 +7,18 @@ using System.Threading.Tasks;
 using UiPath.ChatbotSamples.BotFramework.Actions;
 using UiPath.ChatbotSamples.BotFramework.Actions.Models;
 using UiPath.ChatbotSamples.BotFramework.Common.Models;
-using UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog.Base;
+using UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog.Base;
 using UiPath.ChatbotSamples.BotFramework.Resources;
 using UiPath.ChatbotSamples.BotFramework.Utils;
 
-namespace UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog
+namespace UiPath.ChatbotSamples.BotFramework.Dialogs.MyDialog
 {
     public class DelayedShipmentDialog : StatefulDialogBase
     {
-        private readonly ISapRpaClient _sapRpaClient;
+        private readonly IMyRpaClient _myRpaClient;
         private readonly IStatePropertyAccessor<EntityState> _entityStateAccessor;
 
-        public DelayedShipmentDialog(ISapRpaClient sapRpaClient, IStatePropertyAccessor<EntityState> entityStateAccessor) 
+        public DelayedShipmentDialog(IMyRpaClient myRpaClient, IStatePropertyAccessor<EntityState> entityStateAccessor) 
             : base(nameof(DelayedShipmentDialog), entityStateAccessor)
         {
             var waterfallSteps = new WaterfallStep[]
@@ -34,7 +34,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog
             AddDialog(new ChoicePrompt(nameof(ProcessItemSelectionStepAsync)));
             AddDialog(new TextPrompt(nameof(PlaceOrderStepAsync)));
 
-            _sapRpaClient = sapRpaClient;
+            _myRpaClient = myRpaClient;
             _entityStateAccessor = entityStateAccessor;
         }
 
@@ -49,7 +49,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog
             var customerId = await TryGetEntityValueAsync(stepContext, "CustomerId");
             stepContext.Values["CustomerId"] = customerId;
 
-            var result = await _sapRpaClient.GetItemsAsync(new GetItemsInput() { CustomerId = customerId });
+            var result = await _myRpaClient.GetItemsAsync(new GetItemsInput() { CustomerId = customerId });
 
             if (result?.Items == null || result.Items.Length == 0)
             {
@@ -93,14 +93,14 @@ namespace UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog
             {
                 await stepContext.Context.SendActivityAsync(Resource.Working_On);
                 var item = (Item)stepContext.Values["SelectedItem"];
-                var purchaseOrderOutput = await _sapRpaClient.CreatePurchaseOrderAsync(new CreatePurchaseOrderInput() { ItemId = item.ItemId });
+                var purchaseOrderOutput = await _myRpaClient.CreatePurchaseOrderAsync(new CreatePurchaseOrderInput() { ItemId = item.ItemId });
 
                 var cancelInput = new CancelOrderInput()
                 {
                     OrderId = item.OrderId,
                     CancelReason = "Delayed shipment",
                 };
-                var cancelOrderOutput = await _sapRpaClient.CancelOrderAsync(cancelInput);
+                var cancelOrderOutput = await _myRpaClient.CancelOrderAsync(cancelInput);
                 var orderCancelMessage = string.Format(Resource.Order_Cancelled, item.OrderId, cancelOrderOutput.ReturnLabelLocation);
                 await stepContext.Context.SendActivityAsync(orderCancelMessage);
 
@@ -110,7 +110,7 @@ namespace UiPath.ChatbotSamples.BotFramework.Dialogs.SapDialog
                     ItemId = item.ItemId,
                     Quantity = item.Quantity,
                 };
-                var createSaledOrderOuput = await _sapRpaClient.CreateSalesOrderAsync(salesOrderInput);
+                var createSaledOrderOuput = await _myRpaClient.CreateSalesOrderAsync(salesOrderInput);
                 var orderCreatedMessage = string.Format(Resource.Order_Created, createSaledOrderOuput.OrderId, createSaledOrderOuput.DeliveryDate.ToShortDateString());
                 await stepContext.Context.SendActivityAsync(orderCreatedMessage);
             }
